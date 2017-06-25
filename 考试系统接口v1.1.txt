@@ -1,0 +1,83 @@
+/***************************************************
+* 考试列表:修改输入参数loginCode为userid；
+*  交  卷 ：输入参数添加beginAt，修改loginCode为userid；
+* 
+*
+*
+***************************************************/
+考试列表
+url:/exam/GetExamList.mt
+输入参数
+	String userid	 登录用户ID	必填
+	String pageIndex 当前页，0开始	非必填
+	String pageSize	分页大小 默认20 非必填
+输出参数
+	total		用户考试总数，包括已考核未考，若未考且超过有效期则不显示
+	curIndex
+	Datas：List<Map<>>
+	按有效时间逆序排列
+
+Map字段:
+	examId		考试id
+	title		考试标题
+	activeTime	有效时间 yyyy-MM-dd
+	questionCount	题目数量
+	duration	考试时长 单位：分钟
+	paperId		试卷id
+	finishTime	交卷时间 已完成时为yyyy-MM-dd HH:mm:ss,未完成是时为""(是否完成考试根据这个判断)
+
+查询试卷
+url:/exam/GetExamPaper.mt
+输入参数：
+	String paperId	试卷id
+输出参数：
+	Datas：List<Map<>>
+	按照id顺序排列
+Map字段：
+	question	题干	
+	answer		选项	格式 选择题：{A:A xxx,B:B xxx},判断题：{Y:是，N：否}
+	type		类型	0：单选选择题，1：多选选择题，2：判断题
+	displayNum	题号	显示题号
+	id		id	提交时用的id，每个题目唯一id。从1~题目总量
+	weight		分值	每道题分值，统一类型题目分值一致
+
+交卷：
+url:/exam/FinishExam.mt
+输入参数：
+	examId
+	userid		
+	beginAt		开始考试时间	yyyy-MM-dd HH:mm:ss
+	reqData：{"id":"xxx"}
+	{"1":"A","2":"ACD","3":"Y"}
+输出参数：
+	Datas：Map
+Map字段：
+	score			考试得分
+	spend			考试耗时	xx分xx秒 
+	finishAt		交卷时间	yyyy-MM-dd HH:mm:ss
+	checked：List<Map<>>	批卷结果
+
+checked字段：
+	type		类型	0：单选选择题，1：多选选择题，2：判断题
+	displayNum	题号	显示题号
+	id		id	每个题目唯一id
+	check		结果	true：正确，false：错误
+
+查询考试结果
+url:/exam/GetMyExamResult.mt
+输入参数：
+	String examId
+	String userid 
+输出参数：
+	Datas：Map
+Map字段：
+	score			考试得分
+	spend			考试耗时	xx分xx秒
+	finishAt		交卷时间	yyyy-MM-dd HH:mm:ss
+	checked：List<Map<>>	批卷结果
+
+checked字段：
+	type		类型	0：单选选择题，1：多选选择题，2：判断题
+	displayNum	题号	显示题号
+	id		id	每个题目唯一id
+	check		结果	true：正确，false：错误

@@ -1,0 +1,36 @@
+PODS:
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - MTControls/MTBaseVC (0.2.0):
+    - MTControls/MTVcFucInfo
+    - SVProgressHUD (~> 2.0.3)
+  - MTControls/MTVcFucInfo (0.2.0)
+  - MTHelper/KeychinaHelper (0.1.7)
+  - MTHelper/MTDevice (0.1.7):
+    - MTHelper/KeychinaHelper
+  - MTHelper/MTJson (0.1.7)
+  - MTHelper/MTUtil (0.1.7):
+    - MTHelper/MTDevice
+  - MTNetworking (1.0.1):
+    - MTHelper/MTDevice
+    - MTHelper/MTJson
+    - SVProgressHUD (~> 2.0.3)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - MagicalRecord (~> 2.3.2)
+  - MTControls/MTBaseVC
+  - MTHelper/MTUtil
+  - MTNetworking (~> 1.0.1)
+
+SPEC CHECKSUMS:
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  MTControls: d715c68fdfdc7f133942973a9a097b870dbb0d79
+  MTHelper: 64bafc79f34a325439f0bbc7e0c7e3ab22c2b13a
+  MTNetworking: 391637c386fb9cb8463c76ecc8f86bc9b5913bbb
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: d228c70563888286c3c98744c24fd4599d772660
+
+COCOAPODS: 1.2.1.beta.1

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="CHExaminationSystemMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名通内部第一次考试" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeK-cy-Gwq">
+                        <rect key="frame" x="8" y="8" width="279" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有效日期:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE2-m6-AFA">
+                        <rect key="frame" x="8" y="59.5" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fmm-3m-5GE"/>
+                            <constraint firstAttribute="width" constant="75" id="i8l-BR-TkN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40779560799999998" green="0.40787053109999999" blue="0.40779092909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50题/90分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHg-VG-tNG">
+                        <rect key="frame" x="8" y="36.5" width="271" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dfJ-pH-7VT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40779560804367065" green="0.40787053108215332" blue="0.40779092907905579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-05" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDj-GX-t4U">
+                        <rect key="frame" x="83" y="59.5" width="196" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Wot-wz-0hI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.7116159200668335" blue="0.88307982683181763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_exam_clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="TGp-bB-aJh">
+                        <rect key="frame" x="8" y="85.5" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="Rb4-Eq-7Xl"/>
+                            <constraint firstAttribute="height" constant="17" id="lyp-RR-caR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="考试中，已用时32分钟，剩余58分钟！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDh-Lf-tUy">
+                        <rect key="frame" x="25" y="86" width="262" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.95591932535171509" green="0.037408825010061264" blue="0.028838550671935081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dDh-Lf-tUy" secondAttribute="trailing" id="5uj-uj-lJm"/>
+                    <constraint firstItem="qE2-m6-AFA" firstAttribute="leading" secondItem="RHg-VG-tNG" secondAttribute="leading" id="6YZ-jr-lNj"/>
+                    <constraint firstItem="RHg-VG-tNG" firstAttribute="top" secondItem="BeK-cy-Gwq" secondAttribute="bottom" constant="8" id="6vY-Pe-N0v"/>
+                    <constraint firstItem="IDj-GX-t4U" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="HF1-x2-26v"/>
+                    <constraint firstItem="IDj-GX-t4U" firstAttribute="centerY" secondItem="qE2-m6-AFA" secondAttribute="centerY" id="JbN-EW-lQG"/>
+                    <constraint firstAttribute="trailing" secondItem="BeK-cy-Gwq" secondAttribute="trailing" id="LBg-UW-ssn"/>
+                    <constraint firstItem="TGp-bB-aJh" firstAttribute="top" secondItem="qE2-m6-AFA" secondAttribute="bottom" constant="5" id="Ute-8L-bgD"/>
+                    <constraint firstItem="RHg-VG-tNG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="WFh-x3-bB0"/>
+                    <constraint firstItem="RHg-VG-tNG" firstAttribute="leading" secondItem="BeK-cy-Gwq" secondAttribute="leading" id="daK-hQ-WRd"/>
+                    <constraint firstItem="BeK-cy-Gwq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="fuk-q5-2B0"/>
+                    <constraint firstItem="dDh-Lf-tUy" firstAttribute="top" secondItem="TGp-bB-aJh" secondAttribute="top" id="g1I-DS-79j"/>
+                    <constraint firstItem="TGp-bB-aJh" firstAttribute="leading" secondItem="BeK-cy-Gwq" secondAttribute="leading" id="jDK-Q0-no0"/>
+                    <constraint firstItem="BeK-cy-Gwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="u1F-6w-JXX"/>
+                    <constraint firstItem="qE2-m6-AFA" firstAttribute="top" secondItem="RHg-VG-tNG" secondAttribute="bottom" constant="2" id="u7l-95-Sj5"/>
+                    <constraint firstItem="IDj-GX-t4U" firstAttribute="leading" secondItem="qE2-m6-AFA" secondAttribute="trailing" id="uO0-b8-CXg"/>
+                    <constraint firstAttribute="bottom" secondItem="dDh-Lf-tUy" secondAttribute="bottom" constant="8.5" id="vgH-EZ-1Ds"/>
+                    <constraint firstItem="dDh-Lf-tUy" firstAttribute="leading" secondItem="TGp-bB-aJh" secondAttribute="trailing" id="zrz-3G-RPr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="finishTime" destination="qE2-m6-AFA" id="eaF-uj-CJs"/>
+                <outlet property="imgViewHeight" destination="lyp-RR-caR" id="Ysu-in-HkK"/>
+                <outlet property="imgViewWidth" destination="Rb4-Eq-7Xl" id="ZqF-xf-pH1"/>
+                <outlet property="label1" destination="BeK-cy-Gwq" id="X0I-ID-CJI"/>
+                <outlet property="label2" destination="RHg-VG-tNG" id="SLs-mZ-vLF"/>
+                <outlet property="label3" destination="IDj-GX-t4U" id="nSQ-mr-fQA"/>
+                <outlet property="label4" destination="dDh-Lf-tUy" id="WDy-ay-3BB"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pic_exam_clock.png" width="16" height="16"/>
+    </resources>
+</document>
